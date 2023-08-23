@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="column">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1 class="heading">HODLINFO</h1>
+                </div>
+                <div class="col-lg-4">
+                    <select id="firstSelect" class="firstSelect">
+                        <option>INR</option>
+                    </select>
+                    <select id="firstSelect1" class="firstSelect">
+                        <option>BTC</option>
+                        <option>ETH</option>
+                        <option>USDT</option>
+                        <option>XRP</option>
+                        <option>TRX</option>
+                        <option>DASH</option>
+                        <option>ZEC</option>
+                        <option>XEM</option>
+                        <option>IOST</option>
+                        <option>WIN</option>
+                        <option>BTT</option>
+                        <option>WRX</option>
+                    </select>
+                    <button id="firstSelect2" class="firstSelect">Buy BTC</button>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="row center">
+                        <p class="timer-display" id="timer">60</p>
+                        <button class="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                            </svg><span class="pl-2">Connect Telegram</span></button>
+                        <label class="switch">
+                            <input type="checkbox" onclick="myFunction()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <h5 class="per">0.02 %</h5>
+                    <p>5 Mins</p>
+                </div>
+                <div class="col-2">
+                    <h5>0.71 %</h5>
+                    <p>1 Hour</p>
+                </div>
+                <div class="col-4">
+                    <h4>Best Price to Trade</h4>
+                    <h3>₹49</h3>
+                    <p class="avg">Average XRP/INP net price including commission</p>
+                </div>
+                <div class="col-2">
+                    <h5>6.95 %</h5>
+                    <p>1 Day</p>
+                </div>
+                <div class="col-2">
+                    <h5>8.21 %</h5>
+                    <p>7 Days</p>
+                </div>
+                <div class="row col-12 mt-2">
+                    <h6 class=" col-1">#</h6>
+                    <h6 class=" col-2">store</h6>
+                    <h6 class=" col-2">last</h6>
+                    <h6 class=" col-3">buy</h6>
+                    <h6 class=" col-2">Sell</h6>
+                    <h6>voume</h6>
+
+                </div>
+                <div class="row col-12">
+                    <p class="col-1 text">1</p>
+                    <p class="col-2 text">btc</p>
+                    <p class="col-2 text">23000.0</p>
+                    <p class="col-2 text">22950.0</p>
+                    <p class="col-3 text">23000.0</p>
+                    <p class="col-2 text">6.91941</p>
+                </div>
+                <div class="row col-12">
+                    <p class="col-1 text">2</p>
+                    <p class="col-2 text">eos</p>
+                    <p class="col-2 text">564.9</p>
+                    <p class="col-2 text">2685.0</p>
+                    <p class="col-3 text">27001.0</p>
+                    <p class="col-2 text">611.67</p>
+                </div>
+                <div class="row col-12">
+                    <p class="col-1 text">3</p>
+                    <p class="col-2 text">xrp</p>
+                    <p class="col-2 text">46.0</p>
+                    <p class="col-2 text">45.65</p>
+                    <p class="col-3 text">46.0</p>
+                    <p class=" col-2 text">89313.2</p>
+                </div>
+                <div class="row col-12">
+                    <p class="col-1 text">4</p>
+                    <p class="col-2 text">eth</p>
+                    <p class="col-2 text">1472.9</p>
+                    <p class="col-2 text">1450</p>
+                    <p class="col-3 text">18.97</p>
+                    <p class="col-2 text">139.7</p>
+                </div>
+                <hr class="line">
+
+                <div class="footer-section">
+                    <div class="container">
+                        <div class="row">
+                            <p class="footer-section-address mr-3">
+                                copy right 2019
+                            </p>
+                            <p>...Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
